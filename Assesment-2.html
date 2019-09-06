@@ -106,7 +106,7 @@
 	</form>			  
 </div>
   <script >
-var byClass=document.getElementById("CL");
+  	var byClass=document.getElementById("CL");
 
 var arr=[["Math-Sam","Phy-Bob","CSE-Tim","DBMS-hari","Chem-Alok"],["Phy-John","English-Tim","Phy-Bob","CSE-Mohsin","Analytics-Alok"],["Phy-Bob","English-Tim","math-John","CSE-Mohsin","Chem-Alok"]];
 
@@ -147,9 +147,9 @@ function checkThis()
     var row=document.getElementById("time").value;
     var idArr=[["r0c0","r0c1","r0c2","r0c3","r0c4"],["r1c0","r1c1","r1c2","r1c3","r1c4"],["r2c0","r2c1","r2c2","r2c3","r2c4"]]
     var count=0;
-    var zarr=fd.split("");
-    console.log(zarr);
-    for(var g=parseInt(zarr[0]);g<=row;g++)
+   // var zarr[]=fd.split("0");
+    console.log(fd.charAt(0));
+    for(var g=parseInt(fd.charAt(1));g<=row;g++)
     {
     	for(var s=0;s<5;s++)
     	{
@@ -172,6 +172,7 @@ function checkThis()
     {
     	document.getElementById(fd).innerHTML=x+"/"+y;
     	alert("Success");
+    	arr[parseInt(fd.charAt(1))][parseInt(fd.charAt(3))];
         $("#formBlock").css("display", "none");
 
 
